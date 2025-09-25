@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="gonka" company="sim" webLink="http://" view-date="2025-09-12" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3316" locale="ru_RU">
+<?xml version="1.0" encoding="UTF-8"?><project name="gonka" company="sim" webLink="http://" view-date="2025-08-25" view-index="0" gantt-divider-location="431" resource-divider-location="300" version="3.3.3316" locale="ru_RU">
     <description/>
-    <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Название" width="200" order="0"/>
-        <field id="tpd4" name="Дата начала" width="75" order="1"/>
-        <field id="tpd5" name="Дата окончания" width="75" order="2"/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Название" width="213" order="0"/>
+        <field id="tpd4" name="Дата начала" width="101" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="116" order="2"/>
         <field id="tpd15" name="Заметки" width="20" order="3"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="taskDates"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
@@ -12,7 +14,7 @@
     </view>
     <view id="resource-table">
         <field id="0" name="Имя" width="210" order="0"/>
-        <field id="1" name="Стандартная роль" width="86" order="1"/>
+        <field id="1" name="Стандартная роль" width="87" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -20,7 +22,7 @@
             <day-type id="0"/>
             <day-type id="1"/>
             <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
-            <only-show-weekends value="false"/>
+            <only-show-weekends value="true"/>
             <overriden-day-types/>
             <days/>
         </day-types>
@@ -38,40 +40,22 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="e595f773a9c54dd8970b087f58630024" name="Проектирование" meeting="false" start="2025-09-15" duration="5" complete="0" expand="true">
-            <notes><![CDATA[Карта сайта, прототипы ключевых экранов,
-ТЗ по данным и интеграциям.]]></notes>
-        </task>
-        <task id="1" uid="8418222b0ee34bd59a76d00685dda3ce" name="Бэкенд-модель" meeting="false" start="2025-09-22" duration="15" complete="0" expand="true">
-            <notes><![CDATA[БД, импорт, каталог, чип-сущности, заявки,
-Telegram-уведомления.]]></notes>
-        </task>
-        <task id="2" uid="a165b20ae9d94913a5808dd95b06b6c3" name="Фронтэнд и шаблоны" meeting="false" start="2025-09-22" duration="15" complete="0" expand="true">
-            <notes><![CDATA[Главная, каталог, чип-страница, новости,
-бренды/марки, корзина/чекаут, формы.]]></notes>
-        </task>
-        <task id="3" uid="c31240857beb4393b29a9c4353896895" name="CMS/админка" meeting="false" start="2025-10-13" duration="10" complete="0" expand="true">
-            <notes><![CDATA[Наполнение страниц, баннеры, новости, заявки/
-заказы.]]></notes>
-        </task>
-        <task id="4" uid="03bbf465e6004552b0e42ba6597b128d" name="Интеграции" meeting="false" start="2025-10-27" duration="10" complete="0" expand="true">
-            <notes><![CDATA[Платежи, аналитика, (опционально — доставка/
-CRM).]]></notes>
-        </task>
-        <task id="5" uid="82cd47a582fa4cc48613ac1a7b7f165c" name="Тестирование, SEO-базис, запуск" meeting="false" start="2025-11-10" duration="10" complete="0" expand="true"/>
+        <task id="6" uid="bd2c3cd80a324018a7878c87f404ffad" name="План проекта" meeting="false" start="2025-09-01" duration="14" complete="0" expand="true"/>
+        <task id="7" uid="229730f7b8ea40408ec90300fc2bee71" name="Спецификация требований" meeting="false" start="2025-09-15" duration="14" complete="0" expand="true"/>
+        <task id="8" uid="272307137c0346a88010aa7c893bf140" name="Проектирование" meeting="false" start="2025-09-29" duration="14" complete="0" expand="true"/>
+        <task id="9" uid="17e4052a16214c9fab5b3f5ecba9715e" name="Разработка" meeting="false" start="2025-10-13" duration="35" complete="0" expand="true"/>
+        <task id="11" uid="a28f32b3c1bd40ffa1a18e26cf030c48" name="Тестирование" meeting="false" start="2025-11-17" duration="14" complete="0" expand="true"/>
+        <task id="12" uid="fd7e2a1d003b48e79b00ecd5e32d684d" name="Исправление ошибок" meeting="false" start="2025-12-01" duration="14" complete="0" expand="true"/>
+        <task id="10" uid="c1bfce1dc4cb42b295b3f245f0d35f66" name="Аттестация" meeting="false" start="2025-12-15" duration="7" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Лебедев Андрей" function="Default:0" contacts="" phone=""/>
-        <resource id="1" name="Зигинов Александр" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Зигинов Александр" function="Default:1" contacts="" phone=""/>
         <resource id="2" name="Остапчук Вадим" function="Default:0" contacts="" phone=""/>
         <resource id="3" name="Эшонова Камилла" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Феклов Алексей" function="Default:0" contacts="" phone=""/>
     </resources>
-    <allocations>
-        <allocation task-id="2" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
-        <allocation task-id="2" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
-        <allocation task-id="1" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
-        <allocation task-id="1" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
-    </allocations>
+    <allocations/>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>
